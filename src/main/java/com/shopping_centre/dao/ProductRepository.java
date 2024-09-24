@@ -1,27 +1,3 @@
-package com.shopping_centre.dao;
-
-import java.util.List;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
-
-import com.shopping_centre.entities.Product;
-import com.shopping_centre.entities.Seller;
-
-public interface ProductRepository extends JpaRepository<Product, Long> {
-
-	List<Product> findProductsBySeller(Seller seller);
-
-	List<Product> findByCategory(String category);
-
-	/*
-	 * @Query("select p from Product p where p.p_name LIKE :name% OR p.p_name LIKE %:name OR p.p_name LIKE %:name%"
-	 * )
-	 */
-	@Query("select p from Product p where p.p_name LIKE :name% OR p.p_name LIKE %:name")
-	List<Product> findByName(@Param("name") String name);
-
-	
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6de289643c4f013839c6f25c14015af17de44274bb7de37cc36cbb5e6582f4ab
+size 800

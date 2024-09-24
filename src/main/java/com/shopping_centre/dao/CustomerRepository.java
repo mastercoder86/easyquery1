@@ -1,13 +1,3 @@
-package com.shopping_centre.dao;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.shopping_centre.entities.Customer;
-
-
-public interface CustomerRepository extends JpaRepository<Customer, Long> {
-	//Customer findByEmail(String name);
-	//Customer findByEmailAndPassword(String name,String password);
-	Customer findByPhone(String phone);
-	
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ff85d8dd0c11d98ad697222b1ccee4c4ab397e325b86afab0a8909bbd64af8df
+size 378

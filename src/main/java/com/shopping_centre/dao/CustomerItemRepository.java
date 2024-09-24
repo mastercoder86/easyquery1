@@ -1,19 +1,3 @@
-package com.shopping_centre.dao;
-
-import java.util.List;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.shopping_centre.entities.CustomerItem;
-
-public interface CustomerItemRepository extends JpaRepository<CustomerItem, Long> {
-	CustomerItem findByCustomerIdAndProductId(long cid, long pid);
-
-	List<CustomerItem> findByCustomerIdAndStatus(long id, String status);
-
-	CustomerItem findByStatus(String status);
-
-	List<CustomerItem> findByProductId(long id);
-
-	CustomerItem findFirstByProductId(long id);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:902a7d2eba688f89bab2a3946b3dd1f79116aad392243634089119d4520f4918
+size 550
