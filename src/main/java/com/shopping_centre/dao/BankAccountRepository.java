@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:31f2d16a068cc41d3eb12ee4eecf8163c13f3e22ade5a909e05b360ec171c32c
-size 241
+package com.shopping_centre.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.shopping_centre.entities.BankAccount;
+
+public interface BankAccountRepository extends JpaRepository<BankAccount, Long> {
+
+}

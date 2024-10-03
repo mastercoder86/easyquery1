@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:11982ada3216521d9083b28b5aa35ed4c33e56ab22ae989f81aa1e0c69f8b7d5
-size 396
+package com.shopping_centre.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.shopping_centre.entities.Product;
+import com.shopping_centre.entities.Seller;
+import java.util.List;
+
+public interface SellerRepository extends JpaRepository<Seller, Long> {
+	Seller findByEmail(String name);
+
+	Seller findByEmailAndPassword(String name, String password);
+
+}
